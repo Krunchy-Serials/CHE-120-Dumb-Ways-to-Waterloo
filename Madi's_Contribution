@@ -19,30 +19,30 @@ def timed_input(prompt, timeout):
 
 # Game Ideas
 def close_fume_hood():
-    print('\nQUICK type \'close\' to close the fume hood')
+    print('\n🚨QUICK type \'close\' to close the fume hood🚨')
     answer = timed_input('\ntype here: ', 10)
     
     if answer == 'close':
-        print('you saved the lab!!')
+        print('you saved the lab!! 😅')
         return True
     else:
         print('everyone is unconscious...')
         return False
     
 def learn_crash():
-    print('\nLearn is crashing and the assignment is due!!')
+    print('\nLearn is crashing and the assignment is due!! 💻')
     print('\ntype \'submit\' as quick as you can!!')
     answer = timed_input('\ntype here: ', 10)
     
     if answer == 'submit':
-        print('just in time, 55%!!')
+        print('just in time, 55%!! 😅')
         return True
     else:
         print('another failed assignment...')
         return False
 
 def meniscus_dilemma():
-    print('\nthe meniscus in the beaker is too high, what do you do?')
+    print('\nthe meniscus in the beaker is too high, what do you do? 🧪')
     print('\na) add more \nb) use your mouth and blow it out \nc) remove a drop with a pipette')
     answer = timed_input('\ntype here: ', 10)
     
@@ -50,11 +50,11 @@ def meniscus_dilemma():
         print('perfect!')
         return True
     else:
-        print('have you done your safety?')
+        print('have you done your safety? 🤔')
         return False
     
 def reactor_leak():
-    print('\nQUICK type the code so the reactor is fixed!')
+    print('\nQUICK type the code so the reactor is fixed! 🌋')
     print('\nA57JP')
     answer = timed_input('\ninput code: ', 10)
     
@@ -62,7 +62,7 @@ def reactor_leak():
         print('thank goodness you stopped the leak')
         return True
     else:
-        print('\nWere those fish green before...')
+        print('\nWere those fish green before... 🐠')
         return False
     
 #needed to run
@@ -72,7 +72,7 @@ def main():
     score = 0
     lives = 3
 
-    print("🎉 Welcome to Dumb Ways to Waterloo — Python Edition!")
+    print("🎉 Welcome to Dumb Ways to Waterloo — Python Edition! 🎉")
     print("Survive as many minigames as possible.\n")
 
     while lives > 0:
