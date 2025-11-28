@@ -54,15 +54,16 @@ def meniscus_dilemma():
         return False
     
 def reactor_leak():
-    print('\nQUICK type the code so the reactor is fixed! 🌋')
-    print('\nA57JP')
+    codes = ['A57JP', 'J9OW1', 'NA7T1', '94RU2', 'NI218', '36KQ0']
+    print('\nQUICK type the code so the reactor is fixed!')
+    print(random.choice(codes))
     answer = timed_input('\ninput code: ', 10)
     
-    if answer == 'A57JP':
+    if answer in (codes):
         print('thank goodness you stopped the leak')
         return True
     else:
-        print('\nWere those fish green before... 🐠')
+        print('\nWere those fish green before...')
         return False
     
 #needed to run
