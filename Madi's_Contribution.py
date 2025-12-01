@@ -18,6 +18,9 @@ def timed_input(prompt, timeout):
 
 
 # Game Ideas
+#MS this fuction is about closing the fume hood, you have to type "close" before the time runs out. 
+#MS If the input does not match, the code returns false and prints the message attached to the false if statement. 
+#MS If the input matches exactly then the function returns true and it prints the statement associated with the true if statement.
 def close_fume_hood(time_limit=None):
     effective_time = time_limit or 10
     print(f"\n🚨QUICK! Type 'close' to close the fume hood ({effective_time}s) 🚨")
