@@ -12,12 +12,10 @@ dynamically, and presents a short menu for students to play:
  - Toggle "Cruel Mode" (enables time-limit reduction as you score)
  - View credits and quit
 
-This file focuses on simplicity and readability for beginners
-while demonstrating basic Python modules, dynamic imports, and
-CLI interaction. It also includes lightweight gameplay features:
+Additional:
 
-- Emoji feedback for success/failure and lives (e.g., ✅, ❌, ❤️, 💔).
-- Persistent high score tracking (stored in `highscore.txt` next to this file).
+- Emoji feedback for success/failure and lives (✅, ❌, ❤️, 💔).
+- High score tracking (stored in `highscore.txt` next to this file).
 - Cruel Mode: in survival mode, time limits decrease a small amount
     for every few successful minigames, making the game harder over time.
 """
