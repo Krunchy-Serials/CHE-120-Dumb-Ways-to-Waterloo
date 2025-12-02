@@ -2,22 +2,16 @@
 """
 Main launcher for "Dumb Ways to Waterloo" minigames.
 
-This file implements a small CLI minigame launcher used for a CHE-120
-class. It discovers minigames in the same directory, loads them
-dynamically, and presents a short menu for students to play:
-
  - Start a randomized survival mode (play until you lose all lives)
  - Play a single minigame by selecting it from the list
  - Change the difficulty (affects time limits passed to minigames)
  - Toggle "Cruel Mode" (enables time-limit reduction as you score)
  - View credits and quit
 
-This file focuses on simplicity and readability for beginners
-while demonstrating basic Python modules, dynamic imports, and
-CLI interaction. It also includes lightweight gameplay features:
+Additional:
 
-- Emoji feedback for success/failure and lives (e.g., ✅, ❌, ❤️, 💔).
-- Persistent high score tracking (stored in `highscore.txt` next to this file).
+- Emoji feedback for success/failure and lives (✅, ❌, ❤️, 💔).
+- High score tracking (stored in `highscore.txt` next to this file).
 - Cruel Mode: in survival mode, time limits decrease a small amount
     for every few successful minigames, making the game harder over time.
 """
@@ -40,13 +34,13 @@ MINIGAME_MODULE_FILES = [
     "Madi's_Contribution.py",
 ]
 
-# High score storage (stored in the project directory)
+# High score storage
 HIGH_SCORE_FILE = ROOT / "highscore.txt"
 
 
 def load_module(path: Path):
     """
-    Dynamically load a Python module from a file path.
+    Loads a Python module from a file path.
     """
     spec = importlib.util.spec_from_file_location(path.stem, str(path))
     module = importlib.util.module_from_spec(spec)
