@@ -49,5 +49,3 @@ When you start the game, a main menu will appear. The menu lets you:
 Contributors
 -----------------
 Katherine Kurti, Madilyn Schaus, Krist Sirichan, Sarah Yendall
-
-Enjoy! 🎮
